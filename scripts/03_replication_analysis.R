@@ -9,7 +9,7 @@ exp3_clean <- dat %>%
   pivot_longer(
     cols = starts_with("rcat"),
     names_to = "probe",
-    values_to = "rcat"
+    values_to = "rcat"ds
   ) %>%
   filter(rcat != 0) %>%
   mutate(
